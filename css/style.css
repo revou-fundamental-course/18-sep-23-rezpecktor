@@ -1,3 +1,7 @@
+* {
+  font-family: "Mooli", sans-serif;
+}
+
 body {
   padding: 0px 25px;
 }
@@ -39,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: lightgrey;
+  background: #8c8297;
 }
 .content-left {
   box-sizing: border-box;
@@ -115,7 +119,7 @@ select {
   align-items: center;
   margin: 8px;
 
-  border: 2px solid black;
+  border: 2px solid #8c8297;
 }
 
 .flex-item {
