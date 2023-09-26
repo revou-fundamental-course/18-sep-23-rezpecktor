@@ -45,11 +45,14 @@ body {
   box-sizing: border-box;
   width: 50%;
   text-align: center;
+  padding-top: 25px;
+  margin: 10px;
 }
 
 .content-right {
   box-sizing: border-box;
   width: 50%;
+  margin: 10px;
   padding-top: 25px;
 }
 
@@ -96,4 +99,33 @@ select {
   background: lightgray;
   border-radius: 50%;
   width: 1, 2em;
+}
+
+.contact-us {
+  padding-bottom: 10px;
+}
+
+.nick {
+  padding: 5px 5px 5px 0px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 8px;
+
+  border: 2px solid black;
+}
+
+.flex-item {
+  margin: 5px;
+  list-style: none;
+  text-align: center;
+}
+
+.status > h3,
+p {
+  margin: 2px;
+  text-align: left;
 }

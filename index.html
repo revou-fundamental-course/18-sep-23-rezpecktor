@@ -27,21 +27,42 @@
         </div>
       </div>
       <div id="content" class="content">
+        <!-- Konten kiri -->
         <div id="content-left" class="content-left">
+          <!-- gambar produk -->
           <div id="content-image" class="content-image">
-            <img src="/revoU/assets/place.jpg" class="image" alt="slider-image" />
+            <img src="assets/place.jpg" class="image" alt="slider-image" />
             <span>Fresh Everyday</span>
           </div>
+          <div class="flex-container">
+            <div class="foto flex-item">
+              <img src="assets/avatar.jpg" alt="" width="45px" />
+            </div>
+            <div class="status flex-item">
+              <h3 class="pengguna">John Doe</h3>
+              <p class="pekerjaan">CEO</p>
+            </div>
+          </div>
         </div>
+        <!-- konten kanan -->
         <div id="content-right" class="content-right">
+          <!-- form data -->
           <form class="content-form">
-            <label for="your-name">Your name</label>
-            <input type="text" name="your-name" placeholder="First and last name" />
+            <div class="contact-us">
+              <h2>Contact Us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+            <label for="your-name" class="nick">Your name:</label>
+            <input
+              type="text"
+              name="your-name"
+              placeholder="First and last name"
+            />
 
-            <label for="email">Email addres </label>
+            <label for="email" class="nick">Email address:</label>
             <input type="email" name="email" placeholder="Example@email.com" />
 
-            <label for="interest">What you interested in? </label>
+            <label for="interest" class="nick">What you interested in? </label>
             <select type="select" name="interest">
               <option value="">Option</option>
               <option value="">Vegetable</option>
