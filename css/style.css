@@ -84,15 +84,21 @@ select {
   padding: 8px 2px;
 }
 
+.image {
+  width: 100%;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 .content-image {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.image {
-  width: 100%;
 }
 .content-image span {
   color: gray;
@@ -132,4 +138,26 @@ select {
 p {
   margin: 2px;
   text-align: left;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+  .content-right {
+    width: 100%;
+  }
+  .nav {
+    display: none !important;
+  }
 }

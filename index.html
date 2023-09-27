@@ -6,12 +6,8 @@
     <title>E-grocery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="navigation">
@@ -37,9 +33,10 @@
         <div id="content-left" class="content-left">
           <!-- gambar produk -->
           <div id="content-image" class="content-image">
-            <img src="assets/place.jpg" class="image" alt="slider-image" />
-            <span>Fresh Everyday</span>
+            <img src="assets/place.jpg" class="image active" alt="slider-image" />
+            <img src="assets/place2.png" alt="" class="image" />
           </div>
+
           <div class="flex-container">
             <div class="foto flex-item">
               <img src="assets/avatar.jpg" alt="" width="45px" />
@@ -53,28 +50,27 @@
         <!-- konten kanan -->
         <div id="content-right" class="content-right">
           <!-- form data -->
-          <form class="content-form">
+          <form name="contact-form" id="content-right" class="content-form">
             <div class="contact-us">
               <h2>Contact Us</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
             </div>
             <label for="your-name" class="nick">Your name:</label>
-            <input
-              type="text"
-              name="your-name"
-              placeholder="First and last name"
-            />
+            <input id="your-name" type="text" name="your-name" placeholder="First and last name" />
+            <p id="name-error" class="error-message"></p>
 
             <label for="email" class="nick">Email address:</label>
-            <input type="email" name="email" placeholder="Example@email.com" />
+            <input id="email" type="email" name="email" placeholder="Example@email.com" />
+            <p id="email-error" class="error-message"></p>
 
             <label for="interest" class="nick">What you interested in? </label>
-            <select type="select" name="interest">
-              <option value="">Option</option>
-              <option value="">Vegetable</option>
-              <option value="">Fruit</option>
+            <select id="interest" type="select" name="interest">
+              <option value="">--select interest--</option>
+              <option value="Vegetable">Vegetable</option>
+              <option value="fruit">Fruit</option>
             </select>
-            <div id="buton" type="submit" class="button">SEND</div>
+            <p id="interest-error" class="error-message"></p>
+            <div id="button" type="submit" class="button">SEND</div>
           </form>
         </div>
       </div>
@@ -84,5 +80,6 @@
     </div>
 
     <footer></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
