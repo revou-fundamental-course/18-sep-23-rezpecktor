@@ -3,6 +3,7 @@
 }
 
 body {
+  background-color: #a8fc9c;
   padding: 0px 25px;
 }
 .navigation {
@@ -43,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: #8c8297;
+  background: #1fc705;
 }
 .content-left {
   box-sizing: border-box;
@@ -65,15 +66,15 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  background: darkslategrey;
-  color: white;
+  background: #c0fdbf;
+  color: black;
   padding: 10px 0px;
   margin-top: 10px;
   cursor: pointer;
 }
 .button:hover {
-  background-color: black;
-  color: grey;
+  background-color: #bbcedd;
+  color: black;
 }
 input {
   margin-bottom: 10px;
@@ -160,4 +161,8 @@ p {
   .nav {
     display: none !important;
   }
+}
+
+.warna {
+  color: white;
 }
